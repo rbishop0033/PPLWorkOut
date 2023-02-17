@@ -1,0 +1,15 @@
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\PPLWorkOutProgram.csproj.AssemblyReference.cache
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\PPLWorkOutProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\PPLWorkOutProgram.AssemblyInfoInputs.cache
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\PPLWorkOutProgram.AssemblyInfo.cs
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\PPLWorkOutProgram.csproj.CoreCompileInputs.cache
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\bin\Debug\net6.0\PPLWorkOutProgram.exe
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\bin\Debug\net6.0\PPLWorkOutProgram.deps.json
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\bin\Debug\net6.0\PPLWorkOutProgram.runtimeconfig.json
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\bin\Debug\net6.0\PPLWorkOutProgram.dll
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\bin\Debug\net6.0\PPLWorkOutProgram.pdb
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\PPLWorkOutProgram.dll
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\refint\PPLWorkOutProgram.dll
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\PPLWorkOutProgram.pdb
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\PPLWorkOutProgram.genruntimeconfig.cache
+C:\Users\401765\Desktop\GitPPLWorkout\PPLWorkOutProgram\obj\Debug\net6.0\ref\PPLWorkOutProgram.dll

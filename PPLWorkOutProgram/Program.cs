@@ -23,16 +23,14 @@ namespace WorkoutProgram
                 if (strNumberOfExercises == "1")
                 {
                     BenchPress BP1= new BenchPress();//adding BP as an object
-                    Console.WriteLine(BP1.Name);
-                    Console.WriteLine(BP1.Description);
-                    Console.ReadLine();
-                    Console.WriteLine("Bench Press Warmup:");
-                    Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5 )  + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax*.6) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intBenchPressMax*.75) + "lbs.");
-                    Console.ReadLine();
+                    Console.WriteLine("Excercise: " + BP1.Name);
+                    Console.WriteLine("Equipment needed: " + BP1.Equipment);
+                    Functions function1= new Functions();
+                    function1.BPOutput1(BP1,intBenchPressMax);
+                    
+                    List<BenchPress> BenchList= new List<BenchPress>();
+                    BenchList.Add(new BenchPress());
+                    BenchList[0].Equipment = "barbell";
 
                     Console.WriteLine("Congrats on your workout!");
 
@@ -40,29 +38,17 @@ namespace WorkoutProgram
                 if (strNumberOfExercises == "2")
                     {
                     BenchPress BP1 = new BenchPress();
-                    Console.WriteLine("First excercise:");
-                    Console.WriteLine(BP1.Name);
-                    Console.WriteLine(BP1.Description);
-                    Console.ReadLine();
-                    Console.WriteLine("Bench Press Warmup:");
-                    Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .6) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intBenchPressMax * .7) + "lbs.");
-                    Console.ReadLine();
+                    Console.WriteLine("First excercise: " + BP1.Name);
+                    Console.WriteLine("Equipment needed: " + BP1.Equipment);
+                   
+                    Functions function1 = new Functions();
+                    function1.BPOutput2(BP1, intBenchPressMax);
 
-                    OverHeadPress OH1 = new OverHeadPress();
-                    Console.WriteLine("Second excercise:");
-                    Console.WriteLine(OH1.Name);
-                    Console.WriteLine(OH1.Description);
-                    Console.ReadLine();
-                    Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.2) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .3) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intBenchPressMax * .4) + "lbs.");
-                    Console.ReadLine();
+                    OverHeadPress OH1 = new OverHeadPress();//located within the BenchPress class
+                    Console.WriteLine("Second excercise: " + OH1.Name);
+                    Console.WriteLine("Equipment needed: " + BP1.Equipment);
+                    Functions function2 = new Functions();
+                    function2.OHOutput(OH1, intBenchPressMax);
 
                     Console.WriteLine("Congrats on your workout!");
 
@@ -70,47 +56,28 @@ namespace WorkoutProgram
                 if (strNumberOfExercises == "3")
                     {
                     BenchPress BP1 = new BenchPress();
-                    Console.WriteLine("First exercise:");
-                    Console.WriteLine(BP1.Name);
-                    Console.WriteLine(BP1.Description);
-                    Console.ReadLine();
+                    Console.WriteLine("First exercise:" + BP1.Name);
+                    Functions function1 = new Functions();
+                    function1.BPOutput3(BP1, intBenchPressMax);
 
-                    Console.WriteLine("Bench Press Warmup:");
-                    Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .6) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intBenchPressMax * .7) + "lbs.");
-                    Console.ReadLine();
-
-                    OverHeadPress OH1 = new OverHeadPress();
-                    Console.WriteLine("Second excercise:");
-                    Console.WriteLine(OH1.Name);
-                    Console.WriteLine(OH1.Description);
-                    Console.ReadLine();
-                    Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.2) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .3) + "lbs.");
-                    Console.ReadLine();
-                    Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intBenchPressMax * .4) + "lbs.");
-                    Console.ReadLine();
+                    OverHeadPress OH1 = new OverHeadPress();//located within the BenchPress class
+                    Console.WriteLine("Second excercise: " + OH1.Name);
+                    Functions function2 = new Functions();
+                    function2.OHOutput(OH1, intBenchPressMax);
 
                     TriCepExtension TC1 = new TriCepExtension();
-                    Console.WriteLine("Third exercise:");
-                    Console.WriteLine(TC1.Name); Console.WriteLine(TC1.Description);
-                    Console.ReadLine();
-                    Console.WriteLine("Accessory sets: 3 sets of 10 at weight that can be performed while maintaining good form");
-                    Console.ReadLine();
+                    Console.WriteLine("Third exercise:" + TC1.Name);
+                    Functions function3 = new Functions();
+                    function3.TCOutput(TC1, intBenchPressMax);
+                  
+
                     Console.WriteLine("Congrats on your workout!");
                     }
                 else Console.ReadLine();
                         {
                     Console.WriteLine("Please enter 1-3 excercises");
                         }
-
             }
-
-
         }
     }
 }

@@ -219,11 +219,13 @@ namespace WorkoutProgram
                     Console.WriteLine("Do you want to enter another workout?");
                     Console.ReadLine();
                     }
-            else Console.ReadLine();
-                    
-                        {
+            else if (userInput == null) { }
+
+                    {
                         Console.WriteLine("Please enter 1-3 excercises");
-                        }
+                        Console.ReadLine();
+                        Console.WriteLine("Type exit to quit program");
+                    }
                 }
             }
         }

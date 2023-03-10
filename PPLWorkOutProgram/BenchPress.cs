@@ -14,9 +14,8 @@ namespace PPLWorkOutProgram
         {
              
             Name = "Bench Press";
+            Equipment = "Barbell with weight plates, and flat bench press";
             Description = "While laying flat on back, lower barbell to chest, then push back up";
-            
-
         } 
 
     }

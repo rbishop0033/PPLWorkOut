@@ -13,6 +13,7 @@ namespace PPLWorkOutProgram
         {
 
             Name = "Squat";
+            Equipment = "Barbell with weight plates, preferably in a squat rack or stand";
             Description = "With barbell on across back, bend down until knees are parallel with floor while keeping knees in line with shoulders";
         }
 

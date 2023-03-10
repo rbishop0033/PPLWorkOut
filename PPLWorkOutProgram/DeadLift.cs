@@ -16,6 +16,7 @@ namespace PPLWorkOutProgram
         {
 
             Name = "Deadlift";
+            Equipment = "Barbell with weight plates";
             Description = "Bend down to barbell with hinge at hips. While maintaining straight lower back, pull bar up and close hip hinge";
 
         }

@@ -24,4 +24,83 @@ namespace PPLWorkOutProgram
 
         }
     }
+    public static class PushTitle
+    {
+        public static void Push()
+
+        {
+            Console.WriteLine("--------------------------------------------------------------------------------------------------");
+            Console.WriteLine(".:::::::  .:::::::  .::           .::        .::                 .::                         .::  ");
+            Console.WriteLine(".::    .::.::    .::.::           .::        .::                 .::                         .::  ");
+            Console.WriteLine(".::    .::.::    .::.::           .::   .:   .::   .::    .: .:::.::  .::   .::    .::  .::.:.: .:");
+            Console.WriteLine(".:::::::  .:::::::  .::           .::  .::   .:: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::           .:: .: .:: .::.::    .:: .::   .:.::   .::    .::.::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::           .: .:    .:::: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::::::::     .::        .::   .::    .:::   .::  .::   .::      .::.::   .:: ");
+            Console.WriteLine("--------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("             >======>   >=>     >=>   >=>>=>   >=>    >=>            ");
+            Console.WriteLine("             >=>    >=> >=>     >=> >=>    >=> >=>    >=>            ");
+            Console.WriteLine("             >=>    >=> >=>     >=>  >=>       >=>    >=>            ");
+            Console.WriteLine("             >======>   >=>     >=>    >=>     >=====>>=>            ");
+            Console.WriteLine("             >=>        >=>     >=>       >=>  >=>    >=>            ");
+            Console.WriteLine("             >=>        >=>     >=> >=>    >=> >=>    >=>            ");
+            Console.WriteLine("             >=>          >====>      >=>>=>   >=>    >=>            ");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+    }
+    public static class PullTitle
+    {
+        public static void Pull()
+
+        {
+            Console.WriteLine("--------------------------------------------------------------------------------------------------");
+            Console.WriteLine(".:::::::  .:::::::  .::           .::        .::                 .::                         .::  ");
+            Console.WriteLine(".::    .::.::    .::.::           .::        .::                 .::                         .::  ");
+            Console.WriteLine(".::    .::.::    .::.::           .::   .:   .::   .::    .: .:::.::  .::   .::    .::  .::.:.: .:");
+            Console.WriteLine(".:::::::  .:::::::  .::           .::  .::   .:: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::           .:: .: .:: .::.::    .:: .::   .:.::   .::    .::.::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::           .: .:    .:::: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::::::::     .::        .::   .::    .:::   .::  .::   .::      .::.::   .:: ");
+            Console.WriteLine("--------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("             >======>   >=>     >=> >=>       >=>                   ");
+            Console.WriteLine("             >=>    >=> >=>     >=> >=>       >=>                   ");
+            Console.WriteLine("             >=>    >=> >=>     >=> >=>       >=>                   ");
+            Console.WriteLine("             >======>   >=>     >=> >=>       >=>                   ");
+            Console.WriteLine("             >=>        >=>     >=> >=>       >=>                   ");
+            Console.WriteLine("             >=>        >=>     >=> >=>       >=>                   ");
+            Console.WriteLine("             >=>          >====>    >======>  >======>              ");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+    }
+
+    public static class LegsTitle
+    {
+        public static void Legs()
+
+        {
+            Console.WriteLine("--------------------------------------------------------------------------------------------------");
+            Console.WriteLine(".:::::::  .:::::::  .::           .::        .::                 .::                         .::  ");
+            Console.WriteLine(".::    .::.::    .::.::           .::        .::                 .::                         .::  ");
+            Console.WriteLine(".::    .::.::    .::.::           .::   .:   .::   .::    .: .:::.::  .::   .::    .::  .::.:.: .:");
+            Console.WriteLine(".:::::::  .:::::::  .::           .::  .::   .:: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::           .:: .: .:: .::.::    .:: .::   .:.::   .::    .::.::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::           .: .:    .:::: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  ");
+            Console.WriteLine(".::       .::       .::::::::     .::        .::   .::    .:::   .::  .::   .::      .::.::   .:: ");
+            Console.WriteLine("--------------------------------------------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine("             >=>       >=======>    >===>      >=>>=>               ");
+            Console.WriteLine("             >=>       >=>        >>    >=>  >=>    >=>             ");
+            Console.WriteLine("             >=>       >=>       >=>          >=>                   ");
+            Console.WriteLine("             >=>       >=====>   >=>            >=>                 ");
+            Console.WriteLine("             >=>       >=>       >=>   >===>       >=>              ");
+            Console.WriteLine("             >=>       >=>        >=>    >>  >=>    >=>             ");
+            Console.WriteLine("             >=======> >=======>   >====>      >=>>=>               ");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+    }
 }

@@ -9,19 +9,30 @@ namespace WorkoutProgram
         {
 
             TitleScreen.Title();
-            
+
             Console.WriteLine("Press 1 to enter a push workout");
             Console.WriteLine("Press 2 to enter a pull workout");
             Console.WriteLine("Press 3 to enter a leg workout");
             Console.WriteLine("Press 0 to exit program");
-            string userInput = Console.ReadLine();
+            UserInput userInput1 = new UserInput();
+            userInput1.continueChoice = "n";
+            userInput1.choice = Console.ReadLine();
 
-            
-            while(userInput != "0") 
+
+            while (userInput1.choice != "0")
             {
-              
+                if (userInput1.continueChoice == "y")
+                {
+                    TitleScreen.Title();
 
-                if (userInput == "1")//beggining of the workout programs 
+                    Console.WriteLine("Press 1 to enter a push workout");
+                    Console.WriteLine("Press 2 to enter a pull workout");
+                    Console.WriteLine("Press 3 to enter a leg workout");
+                    Console.WriteLine("Press 0 to exit program");
+                    userInput1.choice = Console.ReadLine();
+                }
+
+                if (userInput1.choice == "1")//beggining of the workout programs 
                 {
                     Console.Clear();
                     PushTitle.Push();
@@ -30,52 +41,49 @@ namespace WorkoutProgram
                     int intBenchPressMax = int.Parse(Console.ReadLine());
                     Console.WriteLine("Enter 1-3. How many exercises do you want to do?");
                     string strNumberOfBPExercises = Console.ReadLine();
-                    
+
                     if (strNumberOfBPExercises == "1")
                     {
 
-                    BenchPress BP1 = new BenchPress();//adding BP as an object
-                    Console.WriteLine("Excercise: " + BP1.Name);
-                    Console.WriteLine("Equipment needed: " + BP1.Equipment);
-                    Functions function1 = new Functions();
-                    function1.BPOutput1(BP1, intBenchPressMax);
+                        BenchPress BP1 = new BenchPress();//adding BP as an object
+                        Console.WriteLine("Excercise: " + BP1.Name);
+                        Console.WriteLine("Equipment needed: " + BP1.Equipment);
+                        Functions function1 = new Functions();
+                        function1.BPOutput1(BP1, intBenchPressMax);
 
-                    List<BenchPress> BenchList = new List<BenchPress>();
-                    BenchList.Add(new BenchPress());
-                    BenchList[0].Equipment = "barbell";
+                        List<BenchPress> BenchList = new List<BenchPress>();
+                        BenchList.Add(new BenchPress());
+                        BenchList[0].Equipment = "barbell";
 
-                    Console.WriteLine("Congrats on your workout!");
-                    Console.ReadLine();
-                    Console.WriteLine("Do you want to enter another workout?");
-                    Console.ReadLine();
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
+                        /* Console.ReadLine(); */
+                        /* TitleScreen.continueOption(userInput1); */
 
                     }
                     if (strNumberOfBPExercises == "2")
                     {
-                    Console.Clear();
-                    PullTitle.Pull();
-                        
-                    BenchPress BP1 = new BenchPress();
-                    Console.WriteLine("First excercise: " + BP1.Name);
-                    Console.WriteLine("Equipment needed: " + BP1.Equipment);
+                        Console.Clear();
+                        PullTitle.Pull();
 
-                    Functions function1 = new Functions();
-                    function1.BPOutput2(BP1, intBenchPressMax);
+                        BenchPress BP1 = new BenchPress();
+                        Console.WriteLine("First excercise: " + BP1.Name);
+                        Console.WriteLine("Equipment needed: " + BP1.Equipment);
 
-                    OverHeadPress OH1 = new OverHeadPress();//located within the BenchPress class
-                    Console.WriteLine("Second excercise: " + OH1.Name);
-                    Console.WriteLine("Equipment needed: " + BP1.Equipment);
-                    Functions function2 = new Functions();
-                    function2.OHOutput(OH1, intBenchPressMax);
+                        Functions function1 = new Functions();
+                        function1.BPOutput2(BP1, intBenchPressMax);
 
-                    Console.WriteLine("Congrats on your workout!");
-                    Console.ReadLine();
-                    Console.WriteLine("Do you want to enter another workout?");
-                    Console.ReadLine();
+                        OverHeadPress OH1 = new OverHeadPress();//located within the BenchPress class
+                        Console.WriteLine("Second excercise: " + OH1.Name);
+                        Console.WriteLine("Equipment needed: " + BP1.Equipment);
+                        Functions function2 = new Functions();
+                        function2.OHOutput(OH1, intBenchPressMax);
+
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
+                        Console.ReadLine();
 
                     }
-                        if (strNumberOfBPExercises == "3")
-                        {
+                    if (strNumberOfBPExercises == "3")
+                    {
                         Console.Clear();
                         PullTitle.Pull();
 
@@ -96,13 +104,11 @@ namespace WorkoutProgram
                         function3.TCOutput(TC1, intBenchPressMax);
 
 
-                        Console.WriteLine("Congrats on your workout!");
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
                         Console.ReadLine();
-                        Console.WriteLine("Do you want to enter another workout?");
-                        Console.ReadLine();
-                        }      
+                    }
                 }
-                if (userInput == "2")//next option for workout type
+                if (userInput1.choice == "2")//next option for workout type
                 {
                     Console.Clear();
                     PullTitle.Pull();
@@ -127,9 +133,7 @@ namespace WorkoutProgram
                         BenchList.Add(new BenchPress());
                         BenchList[0].Equipment = "barbell";
 
-                        Console.WriteLine("Congrats on your workout!");
-                        Console.ReadLine();
-                        Console.WriteLine("Do you want to enter another workout?");
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
                         Console.ReadLine();
                     }
                     if (strNumberOfDLExercises == "2")
@@ -148,9 +152,7 @@ namespace WorkoutProgram
                         Functions function2 = new Functions();
                         function2.LPOutput(LP1, intDeadliftMax);
 
-                        Console.WriteLine("Congrats on your workout!");
-                        Console.ReadLine();
-                        Console.WriteLine("Do you want to enter another workout?");
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
                         Console.ReadLine();
                     }
                     if (strNumberOfDLExercises == "3")
@@ -175,102 +177,97 @@ namespace WorkoutProgram
                         function3.FPOutput(FP1, intDeadliftMax);
 
 
-                        Console.WriteLine("Congrats on your workout!");
-                        Console.ReadLine();
-                        Console.WriteLine("Do you want to enter another workout?");
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
                         Console.ReadLine();
                     }
+                }
 
-                    if (userInput == "3")//final option for workout type    
+                if (userInput1.choice == "3")//final option for workout type    
+                {
+                    Console.Clear();
+                    LegsTitle.Legs();
+
+                    Console.WriteLine("What is your 1RM (1 rep max) for squat?");
+                    int intSquatMax = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter 1-3. How many exercises do you want to do?");
+                    string strNumberOfSQExercises = Console.ReadLine();
+
+                    if (strNumberOfSQExercises == "1")
                     {
                         Console.Clear();
                         LegsTitle.Legs();
 
-                        Console.WriteLine("What is your 1RM (1 rep max) for squat?");
-                        int intSquatMax = int.Parse(Console.ReadLine());
-                        Console.WriteLine("Enter 1-3. How many exercises do you want to do?");
-                        string strNumberOfSQExercises = Console.ReadLine();
+                        Squat SQ1 = new Squat();//adding SQ as an object
+                        Console.WriteLine("Excercise: " + SQ1.Name);
+                        Console.WriteLine("Equipment needed: " + SQ1.Equipment);
+                        Functions function1 = new Functions();
+                        function1.SQOutput1(SQ1, intSquatMax);
 
-                        if (strNumberOfSQExercises == "1")
-                        {
-                            Console.Clear();
-                            LegsTitle.Legs();
+                        List<BenchPress> BenchList = new List<BenchPress>();
+                        BenchList.Add(new BenchPress());
+                        BenchList[0].Equipment = "barbell";
 
-                            Squat SQ1 = new Squat();//adding SQ as an object
-                            Console.WriteLine("Excercise: " + SQ1.Name);
-                            Console.WriteLine("Equipment needed: " + SQ1.Equipment);
-                            Functions function1 = new Functions();
-                            function1.SQOutput1(SQ1, intDeadliftMax);
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
+                        Console.ReadLine();
+                    }
+                    if (strNumberOfSQExercises == "2")
+                    {
+                        Console.Clear();
+                        LegsTitle.Legs();
 
-                            List<BenchPress> BenchList = new List<BenchPress>();
-                            BenchList.Add(new BenchPress());
-                            BenchList[0].Equipment = "barbell";
+                        Squat SQ1 = new Squat();//adding SQ as an object
+                        Console.WriteLine("Excercise: " + SQ1.Name);
+                        Console.WriteLine("Equipment needed: " + SQ1.Equipment);
+                        Functions function1 = new Functions();
+                        function1.SQOutput2(SQ1, intSquatMax);
 
-                            Console.WriteLine("Congrats on your workout!");
-                            Console.ReadLine();
-                            Console.WriteLine("Do you want to enter another workout?");
-                            Console.ReadLine();
-                        }
-                        if (strNumberOfSQExercises == "2")
-                        {
-                            Console.Clear();
-                            LegsTitle.Legs();
+                        LegPress LPR1 = new LegPress();//located within the SQ class
+                        Console.WriteLine("Second excercise: " + LPR1.Name);
+                        Functions function2 = new Functions();
+                        function2.LPROutput(LPR1, intSquatMax);
 
-                            Squat SQ1 = new Squat();//adding SQ as an object
-                            Console.WriteLine("Excercise: " + SQ1.Name);
-                            Console.WriteLine("Equipment needed: " + SQ1.Equipment);
-                            Functions function1 = new Functions();
-                            function1.SQOutput2(SQ1, intDeadliftMax);
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
+                        Console.ReadLine();
+                    }
+                    if (strNumberOfSQExercises == "3")
+                    {
+                        Console.Clear();
+                        LegsTitle.Legs();
 
-                            LegPress LPR1 = new LegPress();//located within the SQ class
-                            Console.WriteLine("Second excercise: " + LPR1.Name);
-                            Functions function2 = new Functions();
-                            function2.LPROutput(LPR1, intSquatMax);
+                        Squat SQ1 = new Squat();//adding SQ as an object
+                        Console.WriteLine("Excercise: " + SQ1.Name);
+                        Console.WriteLine("Equipment needed: " + SQ1.Equipment);
+                        Functions function1 = new Functions();
+                        function1.SQOutput3(SQ1, intSquatMax);
 
-                            Console.WriteLine("Congrats on your workout!");
-                            Console.ReadLine();
-                            Console.WriteLine("Do you want to enter another workout?");
-                            Console.ReadLine();
-                        }
-                        if (strNumberOfSQExercises == "3")
-                        {
-                            Console.Clear();
-                            LegsTitle.Legs();
+                        LegPress LPR1 = new LegPress();//located within the SQ class
+                        Console.WriteLine("Second excercise: " + LPR1.Name);
+                        Functions function2 = new Functions();
+                        function2.LPROutput(LPR1, intSquatMax);
 
-                            Squat SQ1 = new Squat();//adding SQ as an object
-                            Console.WriteLine("Excercise: " + SQ1.Name);
-                            Console.WriteLine("Equipment needed: " + SQ1.Equipment);
-                            Functions function1 = new Functions();
-                            function1.SQOutput3(SQ1, intDeadliftMax);
-
-                            LegPress LPR1 = new LegPress();//located within the SQ class
-                            Console.WriteLine("Second excercise: " + LPR1.Name);
-                            Functions function2 = new Functions();
-                            function2.LPROutput(LPR1, intSquatMax);
-
-                            LegExtension LE1 = new LegExtension();
-                            Console.WriteLine("Third exercise:" + LE1.Name);
-                            Functions function3 = new Functions();
-                            function3.LEOutput(LE1, intSquatMax);
+                        LegExtension LE1 = new LegExtension();
+                        Console.WriteLine("Third exercise:" + LE1.Name);
+                        Functions function3 = new Functions();
+                        function3.LEOutput(LE1, intSquatMax);
 
 
-                            Console.WriteLine("Congrats on your workout!");
-                            Console.ReadLine();
-                            Console.WriteLine("Do you want to enter another workout?");
-                            Console.ReadLine();
-                        }
-                        else if (userInput == null) { }
-
-                        {
-                            Console.Clear();
-                            TitleScreen.Title();
-                            Console.WriteLine("Come back to enter more workouts!");
-                            Console.WriteLine("Exiting program");
-                            Environment.Exit(0);
-                        }
+                        Console.WriteLine("Congrats on your workout! (enter any key to continue)");
+                        Console.ReadLine();
                     }
                 }
+                else if (userInput1.choice == null)
+                {
+                    Console.Clear();
+                    TitleScreen.Title();
+                    Console.WriteLine("Come back to enter more workouts!");
+                    Console.WriteLine("Exiting program");
+                    Environment.Exit(0);
+                }
+
+                Thread.Sleep(3000);
+                TitleScreen.continueOption(userInput1);
             }
         }
+
     }
 }

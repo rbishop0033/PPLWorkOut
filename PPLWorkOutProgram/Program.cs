@@ -13,13 +13,13 @@ namespace WorkoutProgram
             Console.WriteLine("Press 1 to enter a push workout");
             Console.WriteLine("Press 2 to enter a pull workout");
             Console.WriteLine("Press 3 to enter a leg workout");
-            Console.WriteLine("Press 0 to exit program");
+            Console.WriteLine("Press any other key to exit program");
             UserInput userInput1 = new UserInput();
             userInput1.continueChoice = "n";
             userInput1.choice = Console.ReadLine();
 
 
-            while (userInput1.choice != "0")
+            while (userInput1.choice != "0")//loop to enter additional workouts
             {
                 if (userInput1.continueChoice == "y")
                 {
@@ -63,7 +63,7 @@ namespace WorkoutProgram
                     if (strNumberOfBPExercises == "2")
                     {
                         Console.Clear();
-                        PullTitle.Pull();
+                        PushTitle.Push();
 
                         BenchPress BP1 = new BenchPress();
                         Console.WriteLine("First excercise: " + BP1.Name);

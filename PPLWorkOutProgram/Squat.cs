@@ -6,6 +6,27 @@ using System.Threading.Tasks;
 
 namespace PPLWorkOutProgram
 {
+    // Typically you only want one class per file. Since this whole file is called Squat,
+    // but it also has other lower leg exercises in it, it's a little confusing.
+    // Don't be afraid to make folders and organize. For example, a more helpful structure might be:
+    //
+    // exercises(folder)/
+    // ├─ Exercise.cs
+    // ├─ push(folder)/
+    // │  ├─ BenchPress.cs
+    // │  ├─ OverheadPress.cs
+    // │  ├─ TricepExtension.cs
+    // ├─ pull(folder)/
+    // │  ├─ Deadlift.cs
+    // │  ├─ LatPulldown.cs
+    // │  ├─ FacePulls.cs
+    // ├─ legs(folder)/
+    // │  ├─ Squat.cs
+    // │  ├─ LegPress.cs
+    // │  ├─ LegExtension.cs
+    //
+    // So now you have all your Exercises, organized by which type(PPL), each within their own sub folders
+    // And Exercise.cs being the parent class, can just hand in the parent Exercises directory.
     public class Squat : Exercise
     {
         public string Equipment;

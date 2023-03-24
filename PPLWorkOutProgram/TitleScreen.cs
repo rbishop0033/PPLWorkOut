@@ -41,7 +41,10 @@ namespace PPLWorkOutProgram
 
     public class UserInput
     {
+        // This field is probably better suited to be an int,
+        // since you are only ever asking the user to enter an integer value
         public string choice { get; set; }
+        // This field could be a bool since it basically just represents yes/no
         public string continueChoice { get; set; }
     }
     public static class PushTitle
@@ -49,16 +52,12 @@ namespace PPLWorkOutProgram
         public static void Push()
 
         {
-            Console.WriteLine("--------------------------------------------------------------------------------------------------");
-            Console.WriteLine(".:::::::  .:::::::  .::           .::        .::                 .::                         .::  ");
-            Console.WriteLine(".::    .::.::    .::.::           .::        .::                 .::                         .::  ");
-            Console.WriteLine(".::    .::.::    .::.::           .::   .:   .::   .::    .: .:::.::  .::   .::    .::  .::.:.: .:");
-            Console.WriteLine(".:::::::  .:::::::  .::           .::  .::   .:: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  ");
-            Console.WriteLine(".::       .::       .::           .:: .: .:: .::.::    .:: .::   .:.::   .::    .::.::  .::  .::  ");
-            Console.WriteLine(".::       .::       .::           .: .:    .:::: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  ");
-            Console.WriteLine(".::       .::       .::::::::     .::        .::   .::    .:::   .::  .::   .::      .::.::   .:: ");
-            Console.WriteLine("--------------------------------------------------------------------------------------------------");
-            Console.WriteLine();
+            // Since you already have a method that writes the 'main title screen', you can just call that here.
+            // You can do this in the other title screen methods as well. This helps in two ways:
+            // 1. Eliminates duplicated code
+            // 2. Keeps the main title screen consistant. If you wanted to change the Title screen art to "LPP WORKOUT" instead, you only change it in one place and not four different places
+            TitleScreen.Title();
+
             Console.WriteLine("             >======>   >=>     >=>   >=>>=>   >=>    >=>            ");
             Console.WriteLine("             >=>    >=> >=>     >=> >=>    >=> >=>    >=>            ");
             Console.WriteLine("             >=>    >=> >=>     >=>  >=>       >=>    >=>            ");

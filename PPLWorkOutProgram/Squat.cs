@@ -26,7 +26,7 @@ namespace PPLWorkOutProgram
     // │  ├─ LegExtension.cs
     //
     // So now you have all your Exercises, organized by which type(PPL), each within their own sub folders
-    // And Exercise.cs being the parent class, can just hand in the parent Exercises directory.
+    // And Exercise.cs being the parent class, can just hang in the parent Exercises directory.
     public class Squat : Exercise
     {
         public string Equipment;

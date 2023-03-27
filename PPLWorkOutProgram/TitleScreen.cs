@@ -37,6 +37,16 @@ namespace PPLWorkOutProgram
                 userInput.choice = "0";
             }
         }
+        public static class WorkoutQuestions
+        {
+            public static void Questions()
+            {
+                Console.WriteLine("Press 1 to enter a push workout");
+                Console.WriteLine("Press 2 to enter a pull workout");
+                Console.WriteLine("Press 3 to enter a leg workout");
+                Console.WriteLine("Press any other key to exit program");
+            }
+        }
     }
 
     public class UserInput

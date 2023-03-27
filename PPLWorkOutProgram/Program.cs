@@ -9,7 +9,7 @@ namespace WorkoutProgram
         {
 
             TitleScreen.Title();
-
+            
             Console.WriteLine("Press 1 to enter a push workout");
             Console.WriteLine("Press 2 to enter a pull workout");
             Console.WriteLine("Press 3 to enter a leg workout");

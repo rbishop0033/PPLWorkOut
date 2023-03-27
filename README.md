@@ -23,4 +23,4 @@ Feature usage:
 1. Master loop where user can enter a single or multiple workout options, or exit the program.
 2. Multiple classes that inherit properties from general exercise parent class.
 3. Weights and rep schemes are converted based on the user's 1RM to determine the user's working weights.
-4. User input in stored in a text file where previous entries can be viewed.
+4. (pending)User input in stored in a text file where previous entries can be viewed.

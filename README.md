@@ -1,26 +1,35 @@
 # PPLWorkOut
+--------------------------------------------------------------------------------------------------
+.:::::::  .:::::::  .::           .::        .::                 .::                         .::  
+.::    .::.::    .::.::           .::        .::                 .::                         .::  
+.::    .::.::    .::.::           .::   .:   .::   .::    .: .:::.::  .::   .::    .::  .::.:.: .:
+.:::::::  .:::::::  .::           .::  .::   .:: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  
+.::       .::       .::           .:: .: .:: .::.::    .:: .::   .:.::   .::    .::.::  .::  .::  
+.::       .::       .::           .: .:    .:::: .::  .::  .::   .:: .::  .::  .:: .::  .::  .::  
+.::       .::       .::::::::     .::        .::   .::    .:::   .::  .::   .::      .::.::   .:: 
+--------------------------------------------------------------------------------------------------
 
+The PPLWorkOut Program is designed to provide the user with a simple workout program based on either a push, pull, or leg routine. After a program is chosen, weights and exercises are listed based on the user's 1RM (1 rep max).
 
+This solves the guesswork for planning a workout.
 
-Project Plan Scope:
+Features:
 
-Project Objective: To create a console app using c+ that will generate an exercise program for the user. The user will select the type of workout they would like to perform (push, pull, or legs), determine the number of exercises they would like, and using a calculation of one-rep-max, the app will generate a workout routine for the user.
+Feature 1: Implements a "master loop" where the user can repeatedly enter commands/perform actions, including choosing to exit the program.
+Feature 2: Additional classes that inherit one or more properties from its parent
+Feature 3: Build a conversion tool that converts user input to another type and displays it
+Feature 4 (pending):  Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
 
-This will involve some simple questions to acquire data from the user (workout type, number of exercises, etc.). 
+Instructions:
+1. Clone Project to local machine
+2. Choose options 1, 2, or 3 for desired workout type (push, pull, legs).
+3. Enter 1RM (1 rep max) for primary lift associated to workout type (bench press, deadlift, squat).
+4. Choose number of desired workouts.
+5. Workouts and weights are displayed to user.
+6. At end of workout, user can choose to enter another workout (Y) or close the program (N).
 
-Statement of Work: 
-•	The project will use WriteLine and ReadLine functions to acquire information from the user.
-•	Once data is acquired, the app will use if else statements to determine the corresponding workout with set information.
-•	Based on the information entered by the user, the weight range and reps will be determined for the workout.
-•	Using separate classes, the workout information will be pulled to display to the user.
-•	Using functions, the details of each workout (name, description, equipment needed, etc.) will also display to the user.
-•	For additional exercises, have a list that workouts can be pulled from.
-•	Create loop that will allow user to either end program or add more workouts.
-•	Possibility of adding log that will track previous workouts.
-
-Project Features:
-•	Master loop that will allow the user to enter commands (additional workouts) and ability to exit/end.
-•	Additional classes with inherited properties.
-•	Using a list, pull values for various exercises to be used within the app.
-•	Considering adding a log that will record previously completed workouts.
-•	Also considering adding code to pull current date to apply it to workout log
+Feature usage:
+1. Master loop where user can enter a single or multiple workout options, or exit the program.
+2. Multiple classes that inherit properties from general exercise parent class.
+3. Weights and rep schemes are converted based on the user's 1RM to determine the user's working weights.
+4. User input in stored in a text file where previous entries can be viewed.

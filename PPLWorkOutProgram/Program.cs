@@ -13,11 +13,15 @@ namespace WorkoutProgram
             Console.WriteLine("Press 1 to enter a push workout");
             Console.WriteLine("Press 2 to enter a pull workout");
             Console.WriteLine("Press 3 to enter a leg workout");
-            Console.WriteLine("Press any other key to exit program");
+            Console.WriteLine("Press any other key and then option 'N' to exit program");
             UserInput userInput1 = new UserInput();
             userInput1.continueChoice = "n";
             userInput1.choice = Console.ReadLine();
 
+            if (userInput1.choice == null)
+            {
+                userInput1.choice = "0";
+            }
 
             while (userInput1.choice != "0")//loop to enter additional workouts
             {
@@ -48,6 +52,7 @@ namespace WorkoutProgram
                         BenchPress BP1 = new BenchPress();//adding BP as an object
                         Console.WriteLine("Excercise: " + BP1.Name);
                         Console.WriteLine("Equipment needed: " + BP1.Equipment);
+
                         Functions function1 = new Functions();
                         function1.BPOutput1(BP1, intBenchPressMax);
 
@@ -263,7 +268,7 @@ namespace WorkoutProgram
                     Console.WriteLine("Exiting program");
                     Environment.Exit(0);
                 }
-
+                WorkOutLog.LogWorkout();
                 Thread.Sleep(3000);
                 TitleScreen.continueOption(userInput1);
             }

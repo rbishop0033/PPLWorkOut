@@ -7,7 +7,25 @@ using System.Threading.Tasks;
 
 namespace PPLWorkOutProgram
 {
-  
+    public class WorkOutLog
+    {
+        public static void LogWorkout()
+        {
+            // Write file using StreamWriter 
+            string fullpath = @"C:\Users\401765\Desktop\GitPPLWorkout\WorkoutLog.dat";
+            string readText = "";
+            if (File.Exists(fullpath)) 
+            {
+                readText = File.ReadAllText(fullpath);
+            }
+            using (StreamWriter writer = new StreamWriter(fullpath))
+            {
+                writer.WriteLine(readText);
+                writer.WriteLine("Workout complete");
+                writer.WriteLine(DateTime.Now.ToString());
 
+            }  
+        }
+    }
 }
 

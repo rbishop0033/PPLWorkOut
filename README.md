@@ -26,3 +26,6 @@ Feature usage:
 2. Multiple classes that inherit properties from general exercise parent class.
 3. Weights and rep schemes are converted based on the user's 1RM to determine the user's working weights. This is data is calculated and displayed to the user.
 4. Successful workouts are logged in stored in a text file where previous entries showing date/time can be viewed.
+
+ToDo
+1. Implement a null check after user inputs that will repeat the previous question.

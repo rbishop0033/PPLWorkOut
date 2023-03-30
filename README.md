@@ -14,9 +14,12 @@ CodeLouisville project requirements:
 Features:
 
 Feature 1: Implements a "master loop" where the user can repeatedly enter commands/perform actions, including choosing to exit the program.
+
 Feature 2: Additional classes that inherit one or more properties from its parent
+
 Feature 3: Build a conversion tool that converts user input to another type and displays it/Calculate and display data based on an external
 factor
+
 Feature 4: Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
 
 

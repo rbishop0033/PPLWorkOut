@@ -27,7 +27,7 @@ namespace WorkoutProgram
             {
                 if (userInput1.continueChoice == "y")
                 {
-                    TitleScreen.Title();
+                    TitleScreen.Title();//pulls ascii art to top of screen
 
                     Console.WriteLine("Press 1 to enter a push workout");
                     Console.WriteLine("Press 2 to enter a pull workout");
@@ -53,15 +53,12 @@ namespace WorkoutProgram
                         Console.WriteLine("Excercise: " + BP1.Name);
                         Console.WriteLine("Equipment needed: " + BP1.Equipment);                 
                         Functions function1 = new Functions();
-                        function1.BPOutput1(BP1, intBenchPressMax);
-
-                        List<BenchPress> BenchList = new List<BenchPress>();
-                        BenchList.Add(new BenchPress());
-                        BenchList[0].Equipment = "barbell";
+                        var volumeLifted = function1.BPOutput1(BP1, intBenchPressMax);
+                        Console.WriteLine($"Workout volume: You benchpressed a total of {volumeLifted} lbs.!");//an overal total volume returned to the user.
+                        Console.ReadLine();
 
                         Console.WriteLine("Congrats on your workout! (enter any key to continue)");
-                        /* Console.ReadLine(); */
-                        /* TitleScreen.continueOption(userInput1); */
+                        Console.ReadLine();
 
                     }
                     if (strNumberOfBPExercises == "2")
@@ -74,7 +71,9 @@ namespace WorkoutProgram
                         Console.WriteLine("Equipment needed: " + BP1.Equipment);
 
                         Functions function1 = new Functions();
-                        function1.BPOutput2(BP1, intBenchPressMax);
+                        var volumeLifted = function1.BPOutput1(BP1, intBenchPressMax);
+                        Console.WriteLine($"Workout volume: You benchpressed a total of {volumeLifted} lbs.!");
+                        Console.ReadLine();
 
                         OverHeadPress OH1 = new OverHeadPress();//located within the BenchPress class
                         Console.WriteLine("Second excercise: " + OH1.Name);
@@ -89,13 +88,15 @@ namespace WorkoutProgram
                     if (strNumberOfBPExercises == "3")
                     {
                         Console.Clear();
-                        PullTitle.Pull();
+                        PushTitle.Push();
 
 
                         BenchPress BP1 = new BenchPress();
                         Console.WriteLine("First exercise:" + BP1.Name);
                         Functions function1 = new Functions();
-                        function1.BPOutput3(BP1, intBenchPressMax);
+                        var volumeLifted = function1.BPOutput1(BP1, intBenchPressMax);
+                        Console.WriteLine($"Workout volume: You benchpressed a total of {volumeLifted} lbs.!");
+                        Console.ReadLine();
 
                         OverHeadPress OH1 = new OverHeadPress();//located within the BenchPress class
                         Console.WriteLine("Second excercise: " + OH1.Name);
@@ -131,11 +132,10 @@ namespace WorkoutProgram
                         Console.WriteLine("Excercise: " + DL1.Name);
                         Console.WriteLine("Equipment needed: " + DL1.Equipment);
                         Functions function1 = new Functions();
-                        function1.DLOutput1(DL1, intDeadliftMax);
+                        var volumeLifted = function1.DLOutput1(DL1, intDeadliftMax);
+                        Console.WriteLine($"Workout volume: You deadlifted a total of {volumeLifted} lbs.!");
+                        Console.ReadLine();
 
-                        List<BenchPress> BenchList = new List<BenchPress>();
-                        BenchList.Add(new BenchPress());
-                        BenchList[0].Equipment = "barbell";
 
                         Console.WriteLine("Congrats on your workout! (enter any key to continue)");
                         Console.ReadLine();
@@ -149,7 +149,9 @@ namespace WorkoutProgram
                         Console.WriteLine("First excercise: " + DL1.Name);
                         Console.WriteLine("Equipment needed: " + DL1.Equipment);
                         Functions function1 = new Functions();
-                        function1.DLOutput2(DL1, intDeadliftMax);
+                        var volumeLifted = function1.DLOutput1(DL1, intDeadliftMax);
+                        Console.WriteLine($"Workout volume: You deadlifted a total of {volumeLifted} lbs.!");
+                        Console.ReadLine();
 
                         LatPullDown LP1 = new LatPullDown();//located within the DL class
                         Console.WriteLine("Second excercise: " + LP1.Name);
@@ -168,7 +170,9 @@ namespace WorkoutProgram
                         Console.WriteLine("First excercise: " + DL1.Name);
                         Console.WriteLine("Equipment needed: " + DL1.Equipment);
                         Functions function1 = new Functions();
-                        function1.DLOutput3(DL1, intDeadliftMax);
+                        var volumeLifted = function1.DLOutput1(DL1, intDeadliftMax);
+                        Console.WriteLine($"Workout volume: You deadlifted a total of {volumeLifted} lbs.!");
+                        Console.ReadLine();
 
                         LatPullDown LP1 = new LatPullDown();//located within the DL class
                         Console.WriteLine("Second excercise: " + LP1.Name);
@@ -205,7 +209,9 @@ namespace WorkoutProgram
                         Console.WriteLine("Excercise: " + SQ1.Name);
                         Console.WriteLine("Equipment needed: " + SQ1.Equipment);
                         Functions function1 = new Functions();
-                        function1.SQOutput1(SQ1, intSquatMax);
+                        var volumeLifted = function1.SQOutput1(SQ1, intSquatMax);
+                        Console.WriteLine($"Workout volume: You squatted a total of {volumeLifted} lbs.!");
+                        Console.ReadLine();
 
                         List<BenchPress> BenchList = new List<BenchPress>();
                         BenchList.Add(new BenchPress());
@@ -223,7 +229,9 @@ namespace WorkoutProgram
                         Console.WriteLine("Excercise: " + SQ1.Name);
                         Console.WriteLine("Equipment needed: " + SQ1.Equipment);
                         Functions function1 = new Functions();
-                        function1.SQOutput2(SQ1, intSquatMax);
+                        var volumeLifted = function1.SQOutput1(SQ1, intSquatMax);
+                        Console.WriteLine($"Workout volume: You squatted a total of {volumeLifted} lbs.!");
+                        Console.ReadLine();
 
                         LegPress LPR1 = new LegPress();//located within the SQ class
                         Console.WriteLine("Second excercise: " + LPR1.Name);
@@ -242,7 +250,9 @@ namespace WorkoutProgram
                         Console.WriteLine("Excercise: " + SQ1.Name);
                         Console.WriteLine("Equipment needed: " + SQ1.Equipment);
                         Functions function1 = new Functions();
-                        function1.SQOutput3(SQ1, intSquatMax);
+                        var volumeLifted = function1.SQOutput1(SQ1, intSquatMax);
+                        Console.WriteLine($"Workout volume: You squatted a total of {volumeLifted} lbs.!");
+                        Console.ReadLine();
 
                         LegPress LPR1 = new LegPress();//located within the SQ class
                         Console.WriteLine("Second excercise: " + LPR1.Name);

@@ -9,39 +9,72 @@ namespace PPLWorkOutProgram
 {
     public class Functions
     {
-        public void BPOutput1(BenchPress BP, int intBenchPressMax)
+        public double BPOutput1(BenchPress BP, int intBenchPressMax)
         {
+            double firstSetWeight = intBenchPressMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intBenchPressMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intBenchPressMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
+
             Console.WriteLine(BP.Name + " description: " + BP.Description);
             BP.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .6) + "lbs.");
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intBenchPressMax * .75) + "lbs.");
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
+            return volumeLifted;
+
 
         }
-        public void BPOutput2(BenchPress BP, int intBenchPressMax)
+        public string returnlifts(int intBenchPressMax)
         {
+            return string.Empty;
+           
+        }
+        public double BPOutput2(BenchPress BP, int intBenchPressMax)
+        {
+            double firstSetWeight = intBenchPressMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intBenchPressMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intBenchPressMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
+
             Console.WriteLine(BP.Name + " description: " + BP.Description);
             BP.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .6) + "lbs.");
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intBenchPressMax * .7) + "lbs.");
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
+            return volumeLifted;
         }
-        public void BPOutput3(BenchPress BP, int intBenchPressMax)
+        public double BPOutput3(BenchPress BP, int intBenchPressMax)
         {
-            Console.WriteLine(BP.Name + " Description: " + BP.Description);
+            double firstSetWeight = intBenchPressMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intBenchPressMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intBenchPressMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
+
+            Console.WriteLine(BP.Name + " description: " + BP.Description);
             BP.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .6) + "lbs.");
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intBenchPressMax * .65) + "lbs.");
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
+            return volumeLifted;
         }
         public void OHOutput(OverHeadPress OH, int intBenchPressMax)
         {
@@ -61,39 +94,66 @@ namespace PPLWorkOutProgram
             Console.WriteLine("Accessory sets: 3 sets of 10 at weight that can be performed while maintaining good form");
             Console.ReadLine();
         }
-        public void DLOutput1(Deadlift DL, int intDeadliftMax)
+        public double DLOutput1(Deadlift DL, int intDeadliftMax)
         {
+            double firstSetWeight = intDeadliftMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intDeadliftMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intDeadliftMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
+
             Console.WriteLine(DL.Name + " description: " + DL.Description);
             DL.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intDeadliftMax * .6) + "lbs.");
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intDeadliftMax * .75) + "lbs.");
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
+            return volumeLifted;
 
         }
-        public void DLOutput2(Deadlift DL, int intDeadliftMax)
+        public double DLOutput2(Deadlift DL, int intDeadliftMax)
         {
+            double firstSetWeight = intDeadliftMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intDeadliftMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intDeadliftMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
+
             Console.WriteLine(DL.Name + " description: " + DL.Description);
             DL.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intDeadliftMax * .6) + "lbs.");
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intDeadliftMax * .7) + "lbs.");
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
+            return volumeLifted;
         }
-        public void DLOutput3(Deadlift DL, int intDeadliftMax)
+        public double DLOutput3(Deadlift DL, int intDeadliftMax)
         {
-            Console.WriteLine(DL.Name + " Description: " + DL.Description);
+            double firstSetWeight = intDeadliftMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intDeadliftMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intDeadliftMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
+
+            Console.WriteLine(DL.Name + " description: " + DL.Description);
             DL.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intDeadliftMax * .6) + "lbs.");
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intDeadliftMax * .65) + "lbs.");
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
+            return volumeLifted;
         }
         public void LPOutput(LatPullDown LP, int intBenchPressMax)
         {
@@ -114,39 +174,65 @@ namespace PPLWorkOutProgram
             Console.ReadLine();
 
         }
-        public void SQOutput1(Squat SQ, int intSquatMax)
+        public double SQOutput1(Squat SQ, int intSquatMax)
         {
-            Console.WriteLine(SQ.Name + " description: " + SQ.Description);
-            SQ.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intSquatMax * 0.5) + "lbs.");
-            Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intSquatMax * .6) + "lbs.");
-            Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intSquatMax * .75) + "lbs.");
-            Console.ReadLine();
+            double firstSetWeight = intSquatMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intSquatMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intSquatMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
 
-        }
-        public void SQOutput2(Squat SQ, int intSquatMax)
-        {
             Console.WriteLine(SQ.Name + " description: " + SQ.Description);
             SQ.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intSquatMax * 0.5) + "lbs.");
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intSquatMax * .6) + "lbs.");
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intSquatMax * .7) + "lbs.");
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
+            return volumeLifted;
         }
-        public void SQOutput3(Squat SQ, int intSquatMax)
+        public double SQOutput2(Squat SQ, int intSquatMax)
         {
-            Console.WriteLine(SQ.Name + " Description: " + SQ.Description);
+            double firstSetWeight = intSquatMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intSquatMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intSquatMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
+
+            Console.WriteLine(SQ.Name + " description: " + SQ.Description);
             SQ.warmUp();
-            Console.WriteLine("First set: 10 reps at " + (intSquatMax * 0.5) + "lbs.");
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Second set: 5 reps at " + (intSquatMax * .6) + "lbs.");
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
             Console.ReadLine();
-            Console.WriteLine("Working sets: 3 sets of 5 reps at " + (intSquatMax * .65) + "lbs.");
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
+            return volumeLifted;
+        }
+        public double SQOutput3(Squat SQ, int intSquatMax)
+        {
+            double firstSetWeight = intSquatMax * 0.5;
+            double firstSetVolume = firstSetWeight * 10;
+            double secondSetWeight = intSquatMax * 0.6;
+            double secondSetVolume = secondSetWeight * 5;
+            double workingSetWeight = intSquatMax * 0.75;
+            double workingSetVolume = workingSetWeight * 15;
+            double volumeLifted = firstSetVolume + secondSetVolume + workingSetVolume;
+
+            Console.WriteLine(SQ.Name + " description: " + SQ.Description);
+            SQ.warmUp();
+            Console.WriteLine("First set: 10 reps at " + firstSetWeight + "lbs.");
+            Console.ReadLine();
+            Console.WriteLine("Second set: 5 reps at " + secondSetWeight + "lbs.");
+            Console.ReadLine();
+            Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
+            Console.ReadLine();
+            return volumeLifted;
         }
         public void LPROutput(LegPress LPR, int intSquatMax)
         {

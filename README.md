@@ -10,6 +10,8 @@ Feature 1: Implements a "master loop" where the user can repeatedly enter comman
 Feature 2: Additional classes that inherit one or more properties from its parent
 Feature 3: Build a conversion tool that converts user input to another type and displays it
 Feature 4: Implement a log that records errors, invalid inputs, or other important events and writes them to a text file
+Feature 5: Read data from an external file, such as text,JSON, CSV, etc and use that data in your application
+
 
 Instructions:
 1. Clone Project to local machine
@@ -23,9 +25,10 @@ Instructions:
 
 Feature usage:
 1. Master loop where user can enter a single or multiple workout options, or exit the program.
-2. Multiple classes that inherit properties from general exercise parent class.
+2. Multiple classes that inherit properties from general exercise parent class (Excercise.cs). The warmup property is shared among all the other primary exercises.
 3. Weights and rep schemes are converted based on the user's 1RM to determine the user's working weights. This is data is calculated and displayed to the user.
 4. Successful workouts are logged in stored in a text file where previous entries showing date/time can be viewed.
+5. Data is read from created workoutlog to see if file exists on local machine (creates if not), and determines the next entry to add to the log file.
 
 ToDo
 1. Implement a null check after user inputs that will repeat the previous question.

@@ -27,14 +27,7 @@ namespace PPLWorkOutProgram
             Console.ReadLine();
             Console.WriteLine("Working sets: 3 sets of 5 reps at " + workingSetWeight + "lbs.");
             Console.ReadLine();
-            return volumeLifted;
-
-
-        }
-        public string returnlifts(int intBenchPressMax)
-        {
-            return string.Empty;
-           
+            return volumeLifted;    
         }
         public double BPOutput2(BenchPress BP, int intBenchPressMax)
         {

@@ -39,7 +39,7 @@ namespace WorkoutProgram
                 if (userInput1.choice == "1")//beggining of the workout programs 
                 {
                     Console.Clear();
-                    PushTitle.Push();
+                    PushTitle.Push();//separate ascii art for each option chosen by the user
 
                     Console.WriteLine("What is your 1RM (1 rep max) for bench press?");
                     int intBenchPressMax = int.Parse(Console.ReadLine());

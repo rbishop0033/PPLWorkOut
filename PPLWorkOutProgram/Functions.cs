@@ -12,7 +12,8 @@ namespace PPLWorkOutProgram
         public void BPOutput1(BenchPress BP, int intBenchPressMax)
         {
             Console.WriteLine(BP.Name + " description: " + BP.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
+            BP.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .6) + "lbs.");
             Console.ReadLine();
@@ -23,7 +24,8 @@ namespace PPLWorkOutProgram
         public void BPOutput2(BenchPress BP, int intBenchPressMax)
         {
             Console.WriteLine(BP.Name + " description: " + BP.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
+            BP.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .6) + "lbs.");
             Console.ReadLine();
@@ -33,7 +35,8 @@ namespace PPLWorkOutProgram
         public void BPOutput3(BenchPress BP, int intBenchPressMax)
         {
             Console.WriteLine(BP.Name + " Description: " + BP.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
+            BP.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .6) + "lbs.");
             Console.ReadLine();
@@ -43,6 +46,7 @@ namespace PPLWorkOutProgram
         public void OHOutput(OverHeadPress OH, int intBenchPressMax)
         {
             Console.WriteLine(OH.Name + " Description: " + OH.Description);
+            OH.warmUp();
             Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.2) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .3) + "lbs.");
@@ -60,7 +64,8 @@ namespace PPLWorkOutProgram
         public void DLOutput1(Deadlift DL, int intDeadliftMax)
         {
             Console.WriteLine(DL.Name + " description: " + DL.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
+            DL.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intDeadliftMax * .6) + "lbs.");
             Console.ReadLine();
@@ -71,7 +76,8 @@ namespace PPLWorkOutProgram
         public void DLOutput2(Deadlift DL, int intDeadliftMax)
         {
             Console.WriteLine(DL.Name + " description: " + DL.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
+            DL.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intDeadliftMax * .6) + "lbs.");
             Console.ReadLine();
@@ -81,7 +87,8 @@ namespace PPLWorkOutProgram
         public void DLOutput3(Deadlift DL, int intDeadliftMax)
         {
             Console.WriteLine(DL.Name + " Description: " + DL.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
+            DL.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intDeadliftMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intDeadliftMax * .6) + "lbs.");
             Console.ReadLine();
@@ -91,6 +98,7 @@ namespace PPLWorkOutProgram
         public void LPOutput(LatPullDown LP, int intBenchPressMax)
         {
             Console.WriteLine(LP.Name + " Description: " + LP.Description);
+            LP.warmUp();
             Console.WriteLine("First set: 10 reps at " + (intBenchPressMax * 0.2) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intBenchPressMax * .3) + "lbs.");
@@ -109,7 +117,8 @@ namespace PPLWorkOutProgram
         public void SQOutput1(Squat SQ, int intSquatMax)
         {
             Console.WriteLine(SQ.Name + " description: " + SQ.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intSquatMax * 0.5) + "lbs.");
+            SQ.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intSquatMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intSquatMax * .6) + "lbs.");
             Console.ReadLine();
@@ -120,7 +129,8 @@ namespace PPLWorkOutProgram
         public void SQOutput2(Squat SQ, int intSquatMax)
         {
             Console.WriteLine(SQ.Name + " description: " + SQ.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intSquatMax * 0.5) + "lbs.");
+            SQ.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intSquatMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intSquatMax * .6) + "lbs.");
             Console.ReadLine();
@@ -130,7 +140,8 @@ namespace PPLWorkOutProgram
         public void SQOutput3(Squat SQ, int intSquatMax)
         {
             Console.WriteLine(SQ.Name + " Description: " + SQ.Description);
-            Console.WriteLine("First set (warmup): 10 reps at " + (intSquatMax * 0.5) + "lbs.");
+            SQ.warmUp();
+            Console.WriteLine("First set: 10 reps at " + (intSquatMax * 0.5) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intSquatMax * .6) + "lbs.");
             Console.ReadLine();
@@ -140,6 +151,7 @@ namespace PPLWorkOutProgram
         public void LPROutput(LegPress LPR, int intSquatMax)
         {
             Console.WriteLine(LPR.Name + " Description: " + LPR.Description);
+            LPR.warmUp();
             Console.WriteLine("First set: 10 reps at " + (intSquatMax * 0.2) + "lbs.");
             Console.ReadLine();
             Console.WriteLine("Second set: 5 reps at " + (intSquatMax * .3) + "lbs.");

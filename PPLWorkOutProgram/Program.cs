@@ -51,8 +51,7 @@ namespace WorkoutProgram
 
                         BenchPress BP1 = new BenchPress();//adding BP as an object
                         Console.WriteLine("Excercise: " + BP1.Name);
-                        Console.WriteLine("Equipment needed: " + BP1.Equipment);
-
+                        Console.WriteLine("Equipment needed: " + BP1.Equipment);                 
                         Functions function1 = new Functions();
                         function1.BPOutput1(BP1, intBenchPressMax);
 
@@ -269,7 +268,7 @@ namespace WorkoutProgram
                     Environment.Exit(0);
                 }
                 WorkOutLog.LogWorkout();
-                Thread.Sleep(3000);
+                Thread.Sleep(2000);
                 TitleScreen.continueOption(userInput1);
             }
         }

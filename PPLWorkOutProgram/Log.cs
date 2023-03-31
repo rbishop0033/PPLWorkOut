@@ -12,7 +12,7 @@ namespace PPLWorkOutProgram
         public static void LogWorkout()
         {
             // Write file using StreamWriter 
-            string fullpath = @"C:\Users\401765\Desktop\GitPPLWorkout\WorkoutLog.dat";
+            string fullpath = @".\WorkoutLog.dat";
             string readText = "";
             if (File.Exists(fullpath)) 
             {

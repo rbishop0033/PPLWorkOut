@@ -25,7 +25,7 @@ Feature 4: Implement a log that records errors, invalid inputs, or other importa
 
 Instructions:
 1. Clone Project to local machine
-2. Change file path in log.cs to a convenient location on local machine. This is where the WorkoutLog will be created/stored.
+2. Create dat file in same directory as program.cs called "WorkoutLog.dat". This is where the WorkoutLog will be created/stored.
 3. Choose options 1, 2, or 3 for desired workout type (push, pull, legs).
 4. Enter 1RM (1 rep max) for primary lift associated to workout type (bench press, deadlift, squat).
 5. Choose number of desired workouts (1-3).
